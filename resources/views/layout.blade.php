@@ -19,7 +19,13 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body id="page-top">
@@ -38,6 +44,7 @@
                 <div class="sidebar-brand-text mx-3">Mir Admin</div>
             </a>
 
+            
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
@@ -88,7 +95,7 @@
         <li class="nav-item {{Route::is('transdetail*') ? 'active' : ''}}">
             <a class="nav-link collapsed" href="{{route('transdetail.index')}}">
                 <i class="fas fa-solid fa-clock"></i>
-                <span>History Transaction</span>
+                <span>Transaction History </span>
             </a>
         </li>
 
@@ -327,13 +334,13 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+            {{-- <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
-            </footer>
+            </footer> --}}
             <!-- End of Footer -->
 
         </div>

@@ -12,7 +12,10 @@ class TransactionController extends Controller
      */
     public function index()
     {
-        return view('transaction');
+        $transactions = transaction::all();
+        // return ($user);
+        return view('transaction', compact('transactions'));
+        // return view('transaction');
     }
 
     /**
