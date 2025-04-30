@@ -18,7 +18,7 @@
         <tbody>
             <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $trasactionDetail->transaction->id }}</td> <!--Menampilkan Foreign key User-ID-->
+                <td>{{ $trasactionDetail->transaction->id }}</td>
                 <td>{{ $trasactionDetail->item->id}}</td>
                 <td>{{ $trasactionDetail->quantity}}</td>
                 <td>Rp. {{ $trasactionDetail->subtotal}}</td>
